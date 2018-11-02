@@ -46,10 +46,8 @@ public abstract class ArtificialIntelligence extends Voice{
 		return response;
 	}
 	
-	private static String getResourcesPath() {
-		File dir = new File("Resources/");
-		
-		return dir.getAbsolutePath();
+	private String getResourcesPath() {
+		return getClass().getResource("/ai").getFile();
 	}
 	
 	/**

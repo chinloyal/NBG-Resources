@@ -1,4 +1,4 @@
-package bots;
+package ai.bots;
 
 import java.io.File;
 
