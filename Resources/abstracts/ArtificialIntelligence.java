@@ -35,7 +35,7 @@ public abstract class ArtificialIntelligence extends Voice{
 				while (response.contains("&gt;"))
 					response = response.replace("&gt;", ">");
 				
-				processResponse(input);
+				processAction(response, input);
 
 				return response;
 			}
@@ -51,10 +51,12 @@ public abstract class ArtificialIntelligence extends Voice{
 	}
 	
 	/**
-	 * This method should execute an action based on the response of the bot.
+	 * This method should execute an action based on the response of the bot
+	 * and the user's request.
 	 * 
+	 * @param response
 	 * @param request
 	 */
-	public abstract void processResponse(String response);
+	public abstract void processAction(String response, String request);
 
 }
