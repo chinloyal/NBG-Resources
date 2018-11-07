@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: help.aiml -->
 <!-- Author: Romario Chinloy -->
-<!-- Last modified: October 31, 2018 -->
+<!-- Last modified: November 06, 2018 -->
 <!--  -->
 <!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
 <!--  -->
@@ -14,6 +14,6 @@
 <!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. -->
 <category><pattern>HELP VOICE</pattern>
-<template>You can buy a male voice from Svox. Installing this app will give CallMom (as well as all other apps) a male voice. See <a href="https://play.google.com/store/apps/details?id=com.svox.classic.langpack.eng_usa_male&amp;feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5zdm94LmNsYXNzaWMubGFuZ3BhY2suZW5nX3VzYV9tYWxlIl0.">Svox Classic Text-to-Speech Engine</a>.</template>
+<template>I already have a voice.</template>
 </category>
 </aiml>
