@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: testjp.aiml -->
 <!-- Author: Romario Chinloy -->
-<!-- Last modified: October 31, 2018 -->
+<!-- Last modified: November 06, 2018 -->
 <!--  -->
 <!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
 <!--  -->
@@ -14,9 +14,9 @@
 <!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. -->
 <category><pattern>GREETINGS</pattern>
-<template>????????????????????????</template>
+<template><srai>HELLO</srai></template>
 </category>
 <category><pattern>?????</pattern>
-<template><srai>GREETINGS</srai></template>
+<template><srai>NORESP</srai></template>
 </category>
 </aiml>

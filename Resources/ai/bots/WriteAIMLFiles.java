@@ -23,7 +23,7 @@ public class WriteAIMLFiles {
 	}
 
 	private static String getResourcesPath() {
-		File dir = new File("Resources/");
+		File dir = new File("Resources/ai/");
 		
 		return dir.getAbsolutePath();
 	}
