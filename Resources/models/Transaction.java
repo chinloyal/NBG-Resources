@@ -1,6 +1,7 @@
 package models;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import enums.CardType;
 import enums.TransactionType;
@@ -13,6 +14,7 @@ public class Transaction implements Serializable {
 	private double amount;
 	private String description;
 	private CardType cardType;
+	private Date date;
 	
 	public Transaction() {
 		id = 0;
@@ -63,6 +65,14 @@ public class Transaction implements Serializable {
 	}
 	public void setCardType(CardType cardType) {
 		this.cardType = cardType;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
 	}
 	
 	
