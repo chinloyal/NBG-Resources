@@ -20,10 +20,20 @@ public class Response implements Serializable {
 	}
 	
 	
+	public Response(boolean success, Object data) {
+		this(success, data, "");
+	}
+	
+	
 	public Response(boolean success) {
 		this(success, null, "");
 	}
+	
+	public Response(Object data) {
+		this(true, data, "");
+	}
 
+	
 	public boolean isSuccess() {
 		return success;
 	}

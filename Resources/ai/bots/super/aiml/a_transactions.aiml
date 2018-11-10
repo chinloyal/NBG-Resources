@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: a_transactions.aiml -->
 <!-- Author: Romario Chinloy -->
-<!-- Last modified: November 06, 2018 -->
+<!-- Last modified: November 09, 2018 -->
 <!--  -->
 <!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
 <!--  -->
@@ -60,7 +60,22 @@
 </category></topic>
 
 <topic name="BANKING TRANSACTIONS">
+<category><pattern>WHAT IS MY BALANCE</pattern>
+<template><srai>* CHECK MY BALANCE</srai></template>
+</category></topic>
+
+<topic name="BANKING TRANSACTIONS">
+<category><pattern>* MY BALANCE</pattern>
+<template><srai>* CHECK MY BALANCE</srai></template>
+</category></topic>
+
+<topic name="BANKING TRANSACTIONS">
 <category><pattern>HOW MUCH MONEY * MY *</pattern>
+<template><srai>* CHECK MY BALANCE</srai></template>
+</category></topic>
+
+<topic name="BANKING TRANSACTIONS">
+<category><pattern>CHECK MY BALANCE</pattern>
 <template><srai>* CHECK MY BALANCE</srai></template>
 </category></topic>
 
@@ -131,7 +146,7 @@
 
 <topic name="BANKING TRANSACTIONS">
 <category><pattern>* ADD * TO *</pattern>
-<template>Excellent, just give me a moment to process your transaction.</template>
+<template>Excellent, just give me a moment to process your deposit.</template>
 </category></topic>
 
 <topic name="BANKING TRANSACTIONS">
@@ -141,7 +156,7 @@
 
 <topic name="BANKING TRANSACTIONS">
 <category><pattern>_</pattern><that>HOW MUCH MONEY DO YOU WANT TO ADD TO YOUR ACCOUNT</that>
-<template>Good choice, just give me a few seconds to process that.</template>
+<template>Excellent, just give me a moment to process your deposit.</template>
 </category></topic>
 
 <topic name="BANKING TRANSACTIONS">

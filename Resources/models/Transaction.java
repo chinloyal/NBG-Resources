@@ -1,23 +1,25 @@
 package models;
 
+import java.io.Serializable;
+
 import enums.CardType;
 import enums.TransactionType;
 
-public class Transaction {
+public class Transaction implements Serializable {
 	private int id;
-	private String sender;
+	private int sender;
 	private String receiver;
 	private TransactionType transactionType;
 	private double amount;
 	private String description;
-	private CardType card_type;
+	private CardType cardType;
 	
 	public Transaction() {
 		id = 0;
-		sender = "";
+		sender = 0;
 		receiver = "";
 		transactionType = TransactionType.INQUIRY;
-		card_type = CardType.DEBIT;
+		cardType = CardType.DEBIT;
 	}
 	
 	public int getId() {
@@ -26,10 +28,10 @@ public class Transaction {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getSender() {
+	public int getSender() {
 		return sender;
 	}
-	public void setSender(String sender) {
+	public void setSender(int sender) {
 		this.sender = sender;
 	}
 	public String getReceiver() {
@@ -56,11 +58,11 @@ public class Transaction {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public CardType getCard_type() {
-		return card_type;
+	public CardType getCardType() {
+		return cardType;
 	}
-	public void setCard_type(CardType card_type) {
-		this.card_type = card_type;
+	public void setCardType(CardType cardType) {
+		this.cardType = cardType;
 	}
 	
 	
