@@ -6,10 +6,11 @@ public class Photo implements Serializable {
 	
 	private int id;
 	private String name;
+	public static final String DEFAULT = "default.jpg";
 	
 	public Photo() {
 		id = 0;
-		name = "";
+		name = DEFAULT;
 	}
 	
 	

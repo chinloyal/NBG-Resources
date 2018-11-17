@@ -42,7 +42,7 @@ public class User implements Serializable {
 		this.type = "";
 		this.email = "";
 		this.password = "";
-		this.photo = null;
+		this.photo = new Photo();
 	}
 	
 	public User(int id, String firstName, String lastName, String type, String email, @Size(min = 8, message = "- Password should be a minimum of 8 characters") String password) {
@@ -53,7 +53,10 @@ public class User implements Serializable {
 		this.type = type.trim().toLowerCase();
 		this.email = email;
 		this.password = BCrypt.hashpw(password, BCrypt.gensalt());
-		this.photo = null;
+		if(type.equals("customer"))
+			this.photo = new Photo();
+		else
+			this.photo = null;
 	}
 
 	public User(String firstName, String lastName, String type, String email, String password) {
@@ -63,7 +66,11 @@ public class User implements Serializable {
 		this.type = type.trim().toLowerCase();
 		this.email = email;
 		this.password = password;
-		this.photo = null;
+		
+		if(this.type.equals("customer"))
+			this.photo = new Photo();
+		else
+			this.photo = null;
 	}
 
 	public int getId() {
